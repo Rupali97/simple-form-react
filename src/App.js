@@ -3,12 +3,13 @@ import StepperComp from "./StepperCompo";
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import './App.css'
 
 const useStyles = makeStyles((theme) => ({
   formText: {
     textAlign: 'center',
     fontWeight: 'bolder',
-    marginTop: 40,
+    margin: "40px 0 30px 0",
   }
 }));
 

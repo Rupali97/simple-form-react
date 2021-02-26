@@ -6,7 +6,7 @@ function Kyc(props) {
 
   if(!props) return <div />
   return (
-    <div>
+    <div style={{padding: 40}}>
       {
         props.apiData.kycDocs.map((item, i) => (
           <div key={i} style={{marginBottom: 20}}>

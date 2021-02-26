@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
   },
   btnContainer: {
     position: 'relative',
+  },
+  finishDiv: { 
+    padding: 50,
+    textAlign: 'center'
   }
 }));
 
@@ -78,9 +82,9 @@ export default function HorizontalLinearStepper(props) {
           );
         })}
       </Stepper>
-      <div style={{marginTop: 30}}>
+      <div className="formContent">
         {activeStep === steps.length ? (
-          <div style={{textAlign: 'center'}}>
+          <div className={classes.finishDiv}>
             <Typography className={classes.instructions}>
               All steps completed - you&apos;re finished
             </Typography>

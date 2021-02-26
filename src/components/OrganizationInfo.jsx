@@ -4,7 +4,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-
 function OrganizationInfo(props) {
 
   const [orgType, setOrgType] =  useState("none");
@@ -15,7 +14,7 @@ function OrganizationInfo(props) {
   }
 
   return (
-    <div>
+    <div style={{padding: 40}}>
       <Typography variant="h6" gutterBottom> {title} </Typography>
       <FormControl style={{width: '50%'}}>
         <Select
